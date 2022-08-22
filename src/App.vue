@@ -1,16 +1,33 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="menu">
+
+    <MenuList/>
+    <div style="display: flex">
+      <BlobList></BlobList>
+      <router-view style="margin-left: 14em;margin-top: 3em;"></router-view>
+    </div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MenuList from './components/MenuList.vue'
+import BlobList from './components/BlobList.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    MenuList,
+    BlobList,
+  },
+  setup() {
+    function menuClick(title) {
+      console.log(title)
+    }
+
+    return {
+      menuClick,
+    }
+  },
 }
 </script>
 
@@ -19,8 +36,9 @@ export default {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  background-color: #FCFDF7;
 }
+
+
 </style>

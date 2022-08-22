@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.code-pre {
+    background: #2C2C2C18;
+    padding: 3px;
+    line-height: 36px;
+    font-size: 20px;
+}
+/*每个知识点*/
+.area {
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 1px solid skyblue;
+}
+
+/*知识点的每个部分*/
+.part {
+    padding: 1em;
+    margin: 1em;
+    border: 1px salmon solid;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+tr, td {
+    padding: 0.5em;
+    border: 1px solid #CCC;
+}
