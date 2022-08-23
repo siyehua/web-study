@@ -63,6 +63,7 @@
 
       <br/>
       <pre class="code-pre">
+    display: flex; // 开启 flex 弹性布局之后
     text-align: center; //无效
     justify-content: center; // 水平局中
     align-items: center; // 垂直局中

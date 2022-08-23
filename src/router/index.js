@@ -16,6 +16,7 @@ import PuBuLayout from "@/components/css/PuBuLayout";
 import HtmlTable from "@/components/html/HtmlTable";
 import HtmlForm from "@/components/html/HtmlForm";
 import MiPage from "@/components/example/MiPage";
+import FlexLayout from "@/components/css/FlexLayout";
 // import App from "@/App";
 
 const router = new createRouter({
@@ -43,6 +44,8 @@ const router = new createRouter({
             path: "/css/csslayout", component: CssLayout,
         }, {
             path: "/css/cssposition", component: CssPosition,
+        }, {
+            path: "/css/flexlayout", component: FlexLayout,
         }, {
             path: "/css/cssviewpager", component: CssViewPager,
         }, {

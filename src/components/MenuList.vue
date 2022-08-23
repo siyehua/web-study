@@ -88,10 +88,14 @@ export default {
 <style scoped>
 .menu{
   position: fixed;
+  height: 48px;
+  line-height: 48px;
 }
 
 ul {
-  overflow: hidden;
+  overflow: scroll;
+  height: 48px;
+  line-height: 48px;
   background-color: #e8e7e2;
 }
 

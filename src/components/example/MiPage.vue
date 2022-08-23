@@ -7,7 +7,7 @@
     vertical-align: middle;
     background-color: #b1d069
     ">
-      <button @click="enterPager">点击进入</button>
+      <a href="http://43.155.85.224/xiaomi-main/" target="_blank">点击进入</a>
     </div>
   </div>
 </template>
@@ -15,15 +15,6 @@
 <script>
 export default {
   name: "MiPage",
-  setup() {
-    function enterPager() {
-      window.location.href='./MiMainPage.vue'
-    }
-
-    return {
-      enterPager,
-    }
-  },
 }
 </script>
 

@@ -1,10 +1,9 @@
 <template>
-  <div class="menu">
-
+  <div>
     <MenuList/>
-    <div style="display: flex">
-      <BlobList></BlobList>
-      <router-view style="margin-left: 14em;margin-top: 3em;"></router-view>
+    <BlobList></BlobList>
+    <div style="margin-left: 14em;padding-top: 48px;">
+      <router-view></router-view>
     </div>
   </div>
 </template>
@@ -37,6 +36,10 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
+  margin-top: 0;
+}
+
+body{
   background-color: #FCFDF7;
 }
 

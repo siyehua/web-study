@@ -49,18 +49,18 @@ export default {
         })
         list.push({
           id: id++,
+          title: "BFC （高度塌陷）",
+          link: "/css/cssbfc",
+        })
+        list.push({
+          id: id++,
+          title: "Flex 弹性布局",
+          link: "/css/flexlayout",
+        })
+        list.push({
+          id: id++,
           title: "定位",
           link: "/css/cssposition",
-        })
-        list.push({
-          id: id++,
-          title: "轮播图(定位)",
-          link: "/css/cssviewpager",
-        })
-        list.push({
-          id: id++,
-          title: "BFC",
-          link: "/css/cssbfc",
         })
         list.push({
           id: id++,
@@ -71,6 +71,11 @@ export default {
           id: id++,
           title: "Iconfont",
           link: "/css/cssiconfont",
+        })
+        list.push({
+          id: id++,
+          title: "轮播图(定位)",
+          link: "/css/cssviewpager",
         })
         list.push({
           id: id++,
