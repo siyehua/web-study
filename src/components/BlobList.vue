@@ -135,6 +135,12 @@ export default {
           title: "小米首页",
           link: "/example/mipage",
         })
+      }else if(type.toLowerCase() === 'less'){
+        list.push({
+          id: id++,
+          title: "Less",
+          link: "/less/lessbase",
+        })
       }
     }
 

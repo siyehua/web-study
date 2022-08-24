@@ -1,0 +1,55 @@
+.center {
+  text-align: center;
+  justify-content: center;
+  color: #2c3e50;
+}
+
+.box1 {
+  background-color: #b1d069;
+
+  .box2 {
+    background-color: rebeccapurple;
+
+    .box3 {
+      background-color: slateblue;
+    }
+  }
+}
+
+@theme: #b1d069;
+
+
+.user {
+  background: @theme;
+}
+
+
+.user2 {
+  width: 200px;
+  height: $width;
+}
+
+.user3:extend(.user2) {
+  //相等于继承了 user2 的属性
+  background: #9900ff;
+}
+
+@{theme} {
+  background: url("@{theme}/fefef.jpg");
+}
+
+//生成一个 mix 类选择器，这个选择器不会编译到 css 中
+.mix() {//后面追加() 括号就会生成
+  width: 200px;
+  height: $width;
+}
+
+.a {
+  .mix;
+  background: #9900ff;
+}
+
+.b {
+  .mix;
+  color: red;
+}

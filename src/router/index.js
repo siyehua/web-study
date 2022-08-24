@@ -20,6 +20,7 @@ import FlexLayout from "@/components/css/FlexLayout";
 import {Transition} from "vue";
 import TransitionSetting from "@/components/css/TransitionSetting";
 import TransformPosition from "@/components/css/TransformPosition";
+import LessBase from "@/components/less/LessBase";
 // import App from "@/App";
 
 const router = new createRouter({
@@ -65,6 +66,8 @@ const router = new createRouter({
             path:"/css/transformposition", component: TransformPosition,
         }, {
             path: "/css/pubulayout", component: PuBuLayout,
+        }, {
+            path: "/less/lessbase", component: LessBase,
         }, {
             path: "/html/htmlbase", component: HtmlBase,
         }, {

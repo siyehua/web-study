@@ -11,7 +11,7 @@
       &lt;head&gt;
       &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset=&quot;utf-8&quot;&gt;&lt;!-- 编码是 utf-8 --&gt;
       &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
-      &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0&quot;&gt;
+      &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name=&quot;viewport&quot; content=&quot;width=device-width,initial-scale=1.0&quot;&gt;&lt;!-- 视窗等于浏览器的视窗，初始化倍率是 1 --&gt;
       &nbsp;&nbsp;&nbsp;&nbsp;&lt;link rel=&quot;icon&quot; href=&quot;/favicon.ico&quot;&gt;
       &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;my-blob&lt;/title&gt;
       &lt;script defer src=&quot;/js/chunk-vendors.js&quot;&gt;&lt;/script&gt;&lt;script defer src=&quot;/js/app.js&quot;&gt;&lt;/script&gt;
