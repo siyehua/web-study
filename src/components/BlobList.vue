@@ -74,6 +74,16 @@ export default {
         })
         list.push({
           id: id++,
+          title: "过渡与动画",
+          link: "/css/transitionsetting",
+        })
+        list.push({
+          id: id++,
+          title: "transform 变幻",
+          link: "/css/transformposition",
+        })
+        list.push({
+          id: id++,
           title: "轮播图(定位)",
           link: "/css/cssviewpager",
         })

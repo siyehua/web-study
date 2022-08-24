@@ -17,6 +17,9 @@ import HtmlTable from "@/components/html/HtmlTable";
 import HtmlForm from "@/components/html/HtmlForm";
 import MiPage from "@/components/example/MiPage";
 import FlexLayout from "@/components/css/FlexLayout";
+import {Transition} from "vue";
+import TransitionSetting from "@/components/css/TransitionSetting";
+import TransformPosition from "@/components/css/TransformPosition";
 // import App from "@/App";
 
 const router = new createRouter({
@@ -56,6 +59,10 @@ const router = new createRouter({
             path: "/css/cssiconfont", component: CssIconfont,
         }, {
             path: "/css/cssjdtopmenu", component: CssJdTopMenu,
+        }, {
+            path:"/css/transitionsetting", component: TransitionSetting,
+        }, {
+            path:"/css/transformposition", component: TransformPosition,
         }, {
             path: "/css/pubulayout", component: PuBuLayout,
         }, {
