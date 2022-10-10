@@ -51,12 +51,7 @@ export default {
       },
       {
         id: id++,
-        title: "Vue2",
-        link: "/csslayout",
-      },
-      {
-        id: id++,
-        title: "Vue3",
+        title: "Vue",
         link: "/csslayout",
       },
       {
@@ -91,17 +86,21 @@ export default {
 </script>
 
 <style scoped>
-.menu{
+.menu {
+  left: 0;
+  right: 0;
   position: fixed;
-  height: 48px;
-  line-height: 48px;
-}
-
-ul {
-  overflow: scroll;
+  display: flex;
   height: 48px;
   line-height: 48px;
   background-color: #e8e7e2;
+  justify-content: center;
+}
+
+ul {
+  max-width: 1200px;
+  height: 48px;
+  line-height: 48px;
 }
 
 
@@ -113,7 +112,8 @@ li {
 a {
   display: inline-block;
   text-align: center;
-  width: 166px;
+  padding-left: 1em;
+  padding-right: 1em;
   line-height: 48px;
 }
 

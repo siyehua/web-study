@@ -141,6 +141,22 @@ export default {
           title: "Less",
           link: "/less/lessbase",
         })
+      }else if(type.toLowerCase() === 'js 基础'){
+        list.push({
+          id: id++,
+          title: "js基础",
+          link: "/js/jsbase",
+        })
+        list.push({
+          id: id++,
+          title: "string",
+          link: "/js/stinguse",
+        })
+        list.push({
+          id: id++,
+          title: "日期",
+          link: "/js/dateuse",
+        })
       }
     }
 

@@ -17,10 +17,12 @@ import HtmlTable from "@/components/html/HtmlTable";
 import HtmlForm from "@/components/html/HtmlForm";
 import MiPage from "@/components/example/MiPage";
 import FlexLayout from "@/components/css/FlexLayout";
-import {Transition} from "vue";
 import TransitionSetting from "@/components/css/TransitionSetting";
 import TransformPosition from "@/components/css/TransformPosition";
 import LessBase from "@/components/less/LessBase";
+import JsBase from "@/components/js/JsBase";
+import StringUse from "@/components/js/StringUse";
+import DateUse from "@/components/js/DateUse";
 // import App from "@/App";
 
 const router = new createRouter({
@@ -61,9 +63,9 @@ const router = new createRouter({
         }, {
             path: "/css/cssjdtopmenu", component: CssJdTopMenu,
         }, {
-            path:"/css/transitionsetting", component: TransitionSetting,
+            path: "/css/transitionsetting", component: TransitionSetting,
         }, {
-            path:"/css/transformposition", component: TransformPosition,
+            path: "/css/transformposition", component: TransformPosition,
         }, {
             path: "/css/pubulayout", component: PuBuLayout,
         }, {
@@ -82,6 +84,12 @@ const router = new createRouter({
             path: "/example/mipage", component: MiPage,
         }, {
             path: "/tools/toolsbase", component: ToolsBase,
+        }, {
+            path: "/js/jsbase", component: JsBase,
+        }, {
+            path: "/js/stinguse", component: StringUse,
+        }, {
+            path: "/js/dateuse", component: DateUse,
         },
 
     ]
