@@ -40,3 +40,17 @@ tr, td {
     padding: 0.5em;
     border: 1px solid #CCC;
 }
+
+tr.title {
+    background-color: #3f3f3f;
+    color: white;
+}
+
+tr.item {
+    color: #3f3f3f;
+    background-color: white;
+}
+
+tr.item:nth-child(Odd) {
+    background-color: #F5F5F5;
+}

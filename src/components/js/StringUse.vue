@@ -84,6 +84,7 @@ export default {
   data() {
     let a = "fefef";
     let b = `fefefef${a}`;
+    return {}
   },
 }
 </script>

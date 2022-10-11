@@ -23,6 +23,7 @@ import LessBase from "@/components/less/LessBase";
 import JsBase from "@/components/js/JsBase";
 import StringUse from "@/components/js/StringUse";
 import DateUse from "@/components/js/DateUse";
+import ArrayUse from "@/components/js/ArrayUse";
 // import App from "@/App";
 
 const router = new createRouter({
@@ -90,6 +91,8 @@ const router = new createRouter({
             path: "/js/stinguse", component: StringUse,
         }, {
             path: "/js/dateuse", component: DateUse,
+        }, {
+            path: "/js/arrayuse", component: ArrayUse,
         },
 
     ]
