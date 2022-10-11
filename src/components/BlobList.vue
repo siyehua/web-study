@@ -162,6 +162,11 @@ export default {
           title: "日期",
           link: "/js/dateuse",
         })
+        list.push({
+          id: id++,
+          title: "Obejct",
+          link: "/js/objectuse",
+        })
       }
     }
 

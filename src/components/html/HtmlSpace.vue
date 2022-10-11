@@ -98,14 +98,5 @@ export default {
 </script>
 
 <style scoped>
-.title {
-  background-color: #3f3f3f;
-  color: white;
-}
-
-.item {
-  color: #3f3f3f;
-  background-color: white;
-}
 
 </style>

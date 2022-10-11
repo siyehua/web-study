@@ -24,6 +24,7 @@ import JsBase from "@/components/js/JsBase";
 import StringUse from "@/components/js/StringUse";
 import DateUse from "@/components/js/DateUse";
 import ArrayUse from "@/components/js/ArrayUse";
+import ObjectUse from "@/components/js/ObjectUse";
 // import App from "@/App";
 
 const router = new createRouter({
@@ -93,6 +94,8 @@ const router = new createRouter({
             path: "/js/dateuse", component: DateUse,
         }, {
             path: "/js/arrayuse", component: ArrayUse,
+        },{
+            path: "/js/objectuse", component: ObjectUse,
         },
 
     ]
