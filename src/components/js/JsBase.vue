@@ -27,7 +27,23 @@
       <span>上面的例子，a,b 是不一样的，如果 a == b , 比较的值，同等。<br/>
       但是 a === b, 则返回 false，他们的类型不一样。<br/>
       同样的，Number 数值也是，这个类似于 java 的包装类型和基本类型<br/>
-      </span>
+      </span><br/><br/>
+      在 JavaScript 中有 5 种不同的可以包含值的数据类型：<br/>
+      string<br/>
+      number<br/>
+      boolean<br/>
+      object<br/>
+      function<br/><br/><br/>
+      有 6 种类型的对象：<br/>
+      Object<br/>
+      Date<br/>
+      Array<br/>
+      String<br/>
+      Number<br/>
+      Boolean<br/><br/><br/>
+      以及 2 种不能包含值的数据类型：<br/>
+      null<br/>
+      undefined<br/>
     </div>
 
     <div class="part">
@@ -56,97 +72,164 @@
     </div>
 
     <div class="part">
-      <h2>数组</h2>
-      <span>基本操作：
-    </span>
-      <pre class="code-pre">
-    let cars = ["Saab", "Volvo", "BMW"]; // 新建一个数组
-    cars[0];// 访问第一个元素
-    cars[1] = "fefe";// 修改第二个元素
-    cars.length;// 数组的长度
-    cars[cars.length] = '4';//增加一个元素1
-    cars.push('4');//增加一个元素2
-    cars.unshift("a");//增加一个元素到最前面
-    cars.pop();//删除最后一个元素
-    cars.shift();//删除第一个元素
-    cars[100] = 100;//增加很多个元素，中间没有的值是 undefined
+      <h2>常用的数学方法</h2>
+      <table>
+        <tr class="title">
+          <td>方法名</td>
+          <td>作用</td>
+        </tr>
+        <tr class="item">
+          <td>acos(x)</td>
+          <td>返回 x 的反余弦值，以弧度计</td>
+        </tr>
+        <tr class="item">
+          <td>cos(x)</td>
+          <td>返回 x 的余弦值</td>
+        </tr>
+        <tr class="item">
+          <td>asin(x)</td>
+          <td>返回 x 的反正弦值，以弧度计</td>
+        </tr>
+        <tr class="item">
+          <td>sin(x)</td>
+          <td>返回 x 的正弦值</td>
+        </tr>
+        <tr class="item">
+          <td>atan(x)</td>
+          <td>以介于 -PI/2 与 PI/2 弧度之间的数值来返回 x 的反正切值。</td>
+        </tr>
+        <tr class="item">
+          <td>tan(x)</td>
+          <td>返回角的正切</td>
+        </tr>
+        <tr class="item">
+          <td>atan2(x,y)</td>
+          <td>返回从 x 轴到点 (x,y) 的角度</td>
+        </tr>
+        <tr class="item">
+          <td>ceil(x)</td>
+          <td>对 x 进行上舍入</td>
+        </tr>
+        <tr class="item">
+          <td>floor(x)</td>
+          <td>对 x 进行下舍入</td>
+        </tr>
+        <tr class="item">
+          <td>round(x)</td>
+          <td>把 x 四舍五入为最接近的整数</td>
+        </tr>
+        <tr class="item">
+          <td>abs(x)</td>
+          <td>绝对值</td>
+        </tr>
+        <tr class="item">
+          <td>log(x)</td>
+          <td>对数</td>
+        </tr>
+        <tr class="item">
+          <td>max(x,y,z,...,n)</td>
+          <td>最大值</td>
+        </tr>
+        <tr class="item">
+          <td>min(x,y,z,...,n)</td>
+          <td>最小值</td>
+        </tr>
+        <tr class="item">
+          <td>min(x,y,z,...,n)</td>
+          <td>最小值</td>
+        </tr>
+        <tr class="item">
+          <td>pow(x,y)</td>
+          <td>返回 x 的 y 次幂</td>
+        </tr>
+        <tr class="item">
+          <td>sqrt(x)</td>
+          <td>返回 x 的平方根</td>
+        </tr>
+        <tr class="item">
+          <td>random()</td>
+          <td>	返回 0 ~ 1 之间的随机数</td>
+        </tr>
+        <tr class="item">
+          <td>round(x)</td>
+          <td>把 x 四舍五入为最接近的整数</td>
+        </tr>
+      </table>
 
-    //这句话的意思是，在 index = 1 的位置，，删除 0 个元素，添加了一个元素 '3'
-    //这个方法也可以用来删除多个元素
-    cars.splice(1, 0, '3')
-
-    let myGirls = ["Cecilie", "Lone"];
-    myGirls.concat(cars);   // 连接 myGirls 和 cars
-
-    cars.slice(1, 3);// 裁剪数组，类似于字符串的操作
-
-    cars.forEach(aaa) //循环访问1
-    function aaa(value) {
-      console.log(value)
-    }
-
-    for (let i = 0; i 小于 cars.length; i++) {//循环访问2
-      console.log(cars[i])
-    }
-    </pre>
-      <span><br/>如何识别数组？因为数组是 object，假设使用 typeof cars, 返回的是 object, 为了避免这个问题，可以使用：
-        Array.isArray(cars); 来检查是不是数组， 或 fruits instanceof Array
-    </span>
-
-      <span><br/>join(str) 方法能将数组合并成一个字符串<br/>
-        sort();            // 对 fruits 中的元素进行排序<br/>
-        reverse();         // 反转元素顺序<br/>
-       自定义排序 var points = [40, 100, 1, 5, 25, 10];<br/>
-points.sort(function(a, b){return a - b}); <br/>
-    </span>
-
-      <span>
-        数组的迭代方法, 和 java，kotlin 的流很像：<br/>
-        forEach() 迭代<br/>
-        map() 变幻（产生新数组）<br/>
-        filter() 过滤<br/>
-        every() 检查<br/>
-        indexOf() 索引得到符合条件的 index<br/>
-        lastIndexOf() 索引得到最后一个符合条件的 index<br/>
-        find() 索引得到符合条件的元素<br/>
-        findIndex() 同 indexOf <br/>
-      </span>
+      <div><span>Math.floor(Math.random() * 10);		// 返回 0 至 9 之间的数</span></div>
     </div>
+
+    <div class="part">
+      <h2>for 循环对比</h2>
+      除了 fori 循环，以及数组自带的forEach 方法，js 还有两种循环方法。<br/>
+      for in是ES5标准，遍历key.    (遍历对象返回key, 遍历数组项返回数组的index)<br/>
+      for of是ES6标准，遍历value. 它是应用与有迭代器的类型，普通的 object 没有迭代器无法遍历<br/>
+    </div>
+
   </div>
 </template>
 
 <script>
 export default {
   name: "JsBase",
-  data() {
-    let cars = ["Saab", "Volvo", "BMW"]; // 新建一个数组
-    cars[0];// 访问第一个元素
-    cars[1] = "fefe";// 修改第二个元素
-    cars.length;// 数组的长度
-    cars[cars.length] = '4';//增加一个元素1
-    cars.push('4');//增加一个元素2
-    cars.unshift("a");//增加一个元素到最前面
-    cars.pop();//删除最后一个元素
-    cars.shift();//删除第一个元素
-    cars[100] = 100;//增加很多个元素，中间没有的值是 undefined
+  data(){
+    let myobj={
 
-    //这句话的意思是，在 index = 1 的位置，，删除 0 个元素，添加了一个元素 '3'
-    //这个方法也可以用来删除多个元素
-    cars.splice(1, 0, '3')
+      arr:[
 
-    let myGirls = ["Cecilie", "Lone"];
-    myGirls.concat(cars);   // 连接 myGirls 和 cars
+        {id:1, name:"张三", remark:"100,30"},
 
-    cars.slice(1, 3);// 裁剪数组，类似于字符串的操作
+        {id:2, name:"李四", remark:"100,40"},
 
-    cars.forEach(aaa) //循环访问1
-    function aaa(value) {
-      console.log(value)
+        {id:3, name:"赵四", remark:"200,130"},
+
+        {id:4, name:"钱三", remark:"300,30"},
+
+        {id:5, name:"孟敏", remark:"400,50"},
+
+      ],
+      funName:function (){
+        //方法
+        console.log('方法', this);
+      },
+
     }
 
-    for (let i = 0; i < cars.length; i++) {//循环访问2
-      console.log(cars[i])
+    "use "
+    function myFuncation() {
+      // 函数
+      console.log('函数', this)
     }
+
+
+    for(let i in myobj){
+      console.log(i);  //返回：arr
+    }
+
+    for(let i in myobj.arr){
+
+      console.log(i);  //返回：0,1,2,3,4
+
+    }
+
+    for(let i of myobj.arr){
+
+      console.log(i);  //返回如下结果列表
+
+    }
+    const person = {
+      name: "Bill",
+      age: 19,
+      city: "Seattle"
+    };
+
+    JSON.parse(JSON.stringify(person))
+
+    return {
+      myobj,
+      myFuncation,
+    }
+
   },
 }
 </script>

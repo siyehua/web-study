@@ -149,6 +149,11 @@ export default {
         })
         list.push({
           id: id++,
+          title: "数组",
+          link: "/js/arrayuse",
+        })
+        list.push({
+          id: id++,
           title: "string",
           link: "/js/stinguse",
         })
