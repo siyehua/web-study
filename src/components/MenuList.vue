@@ -37,7 +37,7 @@ export default {
       {
         id: id++,
         title: "JS 基础",
-        link: "/csslayout",
+        link: "/js/jsbase",
       },
       {
         id: id++,

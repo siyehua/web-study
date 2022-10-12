@@ -167,6 +167,16 @@ export default {
           title: "Obejct",
           link: "/js/objectuse",
         })
+        list.push({
+          id: id++,
+          title: "函数",
+          link: "/js/functionuse",
+        })
+        list.push({
+          id: id++,
+          title: "类",
+          link: "/js/classuse",
+        })
       }
     }
 

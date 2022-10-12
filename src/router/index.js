@@ -25,6 +25,8 @@ import StringUse from "@/components/js/StringUse";
 import DateUse from "@/components/js/DateUse";
 import ArrayUse from "@/components/js/ArrayUse";
 import ObjectUse from "@/components/js/ObjectUse";
+import FunctionUse from "@/components/js/FunctionUse";
+import ClassUse from "@/components/js/ClassUse";
 // import App from "@/App";
 
 const router = new createRouter({
@@ -94,8 +96,12 @@ const router = new createRouter({
             path: "/js/dateuse", component: DateUse,
         }, {
             path: "/js/arrayuse", component: ArrayUse,
-        },{
+        }, {
             path: "/js/objectuse", component: ObjectUse,
+        }, {
+            path: "/js/functionuse", component: FunctionUse,
+        }, {
+            path: "/js/classuse", component: ClassUse,
         },
 
     ]
