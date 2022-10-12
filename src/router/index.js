@@ -27,6 +27,7 @@ import ArrayUse from "@/components/js/ArrayUse";
 import ObjectUse from "@/components/js/ObjectUse";
 import FunctionUse from "@/components/js/FunctionUse";
 import ClassUse from "@/components/js/ClassUse";
+import AsyncUse from "@/components/js/AsyncUse";
 // import App from "@/App";
 
 const router = new createRouter({
@@ -102,6 +103,8 @@ const router = new createRouter({
             path: "/js/functionuse", component: FunctionUse,
         }, {
             path: "/js/classuse", component: ClassUse,
+        }, {
+            path: "/js/asyncuse", component: AsyncUse,
         },
 
     ]

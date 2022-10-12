@@ -20,10 +20,10 @@
       <h2>数据类型</h2>
       <span>基本类型和对象是不一样的<br/>
       </span>
-      <pre class="code-pre">
+      <pre><code class="language-javascript language-css">
     let a = 'fefef'
     let b = new String('fefef')
-    </pre>
+    </code></pre>
       <span>上面的例子，a,b 是不一样的，如果 a == b , 比较的值，同等。<br/>
       但是 a === b, 则返回 false，他们的类型不一样。<br/>
       同样的，Number 数值也是，这个类似于 java 的包装类型和基本类型<br/>

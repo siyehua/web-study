@@ -8,9 +8,9 @@
       <div><br/>
         安装，使用npm，输入：
       </div>
-      <pre class="code-pre">
+      <pre><code class="language-javascript language-css">
  sudo npm install less -g
-    </pre>
+    </code></pre>
       <p>安装好之后，在 Webstorm 中设置里：Setting → Tools → File Watchers → 点击加号 → 默认会自动选择 lessc，点击确定即可。</p>
       <img src="../../assets/setting_less.jpg" alt="123" style="width: 650px;object-fit: cover;">
 
@@ -23,7 +23,7 @@
 
       <h3>嵌套</h3>
       <p>css 写子代元素需要这么写：</p>
-      <pre class="code-pre">
+      <pre><code class="language-javascript language-css">
 .box1 {
   background-color: #b1d069;
 }
@@ -34,10 +34,10 @@
 .box1 .box2 .box3 {
   background-color: slateblue;
 }
-    </pre>
+    </code></pre>
 
       <p>改成 less 可以直接这么写</p>
-      <pre class="code-pre">
+      <pre><code class="language-javascript language-css">
 .box1 {
   background-color: #b1d069;
 
@@ -49,13 +49,13 @@
     }
   }
 }
-    </pre>
+    </code></pre>
 
 
       <br/><br/>
       <h3>变量使用</h3>
       <p>默认变量定义使用 @，例如：</p>
-      <pre class="code-pre">
+      <pre><code class="language-javascript language-css">
 @theme: #b1d069; //定义变量,注意，必须以 ; 分号结尾
 
 .user {
@@ -70,10 +70,10 @@
   //用作字符串要加上{}括号
   background: url("@{theme}/fefef.jpg");
 }
-      </pre>
+      </code></pre>
 
       <h3>扩展</h3>
-      <pre class="code-pre">
+      <pre><code class="language-javascript language-css">
 .user3:extend(.user2){
   //相等于继承了 user2 的属性
   background: #9900ff;
@@ -85,10 +85,10 @@
   width: 200px;
   height: 200px;
 }
-      </pre>
+      </code></pre>
 
       <p><br/><br><br>混合，与扩展不同的时，混合是把所有的属性都复制过来</p>
-      <pre class="code-pre">
+      <pre><code class="language-javascript language-css">
 //生成一个 mix 类选择器，这个选择器不会编译到 css 中
 .mix() {//后面追加() 括号就会生成
   width: 200px;
@@ -104,10 +104,10 @@
   .mix;
   color: red;
 }
-      </pre>
+      </code></pre>
 
       <p>编译结果,不会生成 mix 类选择器：</p>
-      <pre class="code-pre">
+      <pre><code class="language-javascript language-css">
 .a {
   width: 200px;
   height: 200px;
@@ -118,7 +118,7 @@
   height: 200px;
   color: red;
 }
-      </pre>
+      </code></pre>
     </div>
 
 

@@ -3,7 +3,7 @@
     <h1>日期使用</h1>
     <div class="part">
       <h2>基本使用</h2>
-      <pre class="code-pre">
+      <pre><code class="language-javascript language-css">
     let now = new Date(); // 当前时间
     now = new Date(2019,11,10,18,50,11,0) ; // 年月日时分秒毫秒（月是 0~11）
     now = new Date("2019-11-11");
@@ -12,7 +12,7 @@
     //UTC（Universal Time Coordinated）等同于 GMT（格林威治时间）。
     //注释：UTC，协调世界时，又称世界统一时间，世界标准时间，国际协调时间。
     now.toUTCString();// 转成 UTC时区
-    </pre>
+    </code></pre>
 
     </div>
 

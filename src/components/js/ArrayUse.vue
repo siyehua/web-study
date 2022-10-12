@@ -3,7 +3,7 @@
     <h1>数组</h1>
     <span>基本操作：
     </span>
-    <pre class="code-pre">
+    <pre><code class="language-javascript language-css">
     let cars = ["Saab", "Volvo", "BMW"]; // 新建一个数组
     cars[0];// 访问第一个元素
     cars[1] = "fefe";// 修改第二个元素
@@ -32,7 +32,7 @@
     for (let i = 0; i 小于 cars.length; i++) {//循环访问2
       console.log(cars[i])
     }
-    </pre>
+    </code></pre>
 
   </div>
 

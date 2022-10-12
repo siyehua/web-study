@@ -32,11 +32,11 @@
       <h2>文本局中对齐的三种方式</h2>
 
 
-      <pre class="code-pre">
+      <pre><code class="language-javascript language-css">
     display: table-cell; //表示设置成 table 的一个元素 td
     text-align: center; // 水平局中
     vertical-align: middle;  //垂直局中
-      </pre>
+      </code></pre>
       <div style="width: 10em;
     height: 10em;
     display: table-cell;
@@ -48,10 +48,10 @@
       </div>
 
       <br/>
-      <pre class="code-pre">
+      <pre><code class="language-javascript language-css">
     text-align: center; //水平局中
     line-height: 10em;  // 行高等于高度，则垂直局中
-      </pre>
+      </code></pre>
       <div style="width: 10em;
     height: 10em;
     text-align: center;
@@ -62,12 +62,12 @@
       </div>
 
       <br/>
-      <pre class="code-pre">
+      <pre><code class="language-javascript language-css">
     display: flex; // 开启 flex 弹性布局之后
     text-align: center; //无效
     justify-content: center; // 水平局中
     align-items: center; // 垂直局中
-      </pre>
+      </code></pre>
       <div style="width: 10em;
     height: 10em;
     display: flex;
@@ -83,7 +83,7 @@
 
     <div class="part">
       <h2>文本后面加省略号</h2>
-      <pre class="code-pre">
+      <pre><code class="language-javascript language-css">
         .text-ellipsis{
         width: 5em;
         /*height: 5em;*/ 如果不是高度是多行，无效
@@ -91,13 +91,13 @@
         overflow: hidden; //设置这个表示文本溢出了要截断，不然不会有效果
         text-overflow: ellipsis; //文本过长就会添加省略号
         }
-      </pre>
+      </code></pre>
       <h3>例如下面的例子</h3>
       <div class="text-ellipsis">我是很长很长的文本我是很长很长的文本我是很长很长的文本我是很长很长的文本我是很长很长的文本我是很长很长的文本</div>
     </div>
     <div class="part">
       设置表格有 border，这么设置：<br>
-      <pre class="code-pre">
+      <pre><code class="language-javascript language-css">
           table {
           border-collapse: collapse;
           border-spacing: 0;
@@ -106,7 +106,7 @@
           tr, td {
           padding: 0.5em;
           border: 1px solid #CCC;
-          }</pre>
+          }</code></pre>
     </div>
     <div class="part"><br/>
       <h3>超链接设置</h3>

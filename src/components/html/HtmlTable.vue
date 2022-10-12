@@ -5,7 +5,7 @@
       <h2>一个基本表格</h2>
 
       <div>代码：</div>
-      <pre class="code-pre">
+      <pre><code class="language-javascript language-css">
   &lt;table&gt;
       &lt;tr&gt;
         &lt;td&gt;商品&lt;/td&gt;
@@ -28,7 +28,7 @@
         &lt;td&gt;20&lt;/td&gt;
       &lt;/tr&gt;
     &lt;/table&gt;
-    </pre>
+    </code></pre>
       <table class="clear">
         <tr class="clear">
           <td>商品</td>
@@ -56,7 +56,7 @@
     <div class="part">
       <h2>移除默认样式</h2>
       <div>默认的 table 是有样式的，有一定的间距，要移除样式：</div>
-      <pre class="code-pre">
+      <pre><code class="language-javascript language-css">
 table {
     border-collapse: collapse; //合并边距
     border-spacing: 0; //边距为 0，设置了上面的属性，当前属性就无效了
@@ -66,7 +66,7 @@ tr, td {
     padding: 0.5em;
     border: 1px solid #CCC;
 }
-    </pre>
+    </code></pre>
       <div>经过上面的设置之后，再来看看表格：</div>
       <table>
         <tr>
@@ -95,12 +95,12 @@ tr, td {
     <div class="part">
       <h2>设置单元格的内容对齐方式</h2>
       <div>默认的 td 在垂直方式上是局中对齐的，但是水平方向是从左到右，可以修改：</div>
-      <pre class="code-pre">
+      <pre><code class="language-javascript language-css">
 #content td { //表示只作用在id 为 content 的 td 上
   vertical-align: middle; //垂直方式上是局中对齐的就是这个样式，可不设置
   text-align: center; //文字水平方向上局中
 }
-    </pre>
+    </code></pre>
       <div>经过上面的设置之后，再来看看表格：</div>
       <table id="content">
         <tr>
@@ -129,7 +129,7 @@ tr, td {
     <div class="part">
       <h2>背景颜色</h2>
       <div>有时候我们希望表格的标题，以及每一行的颜色都不同，可以利用 nth 来做</div>
-      <pre class="code-pre">
+      <pre><code class="language-javascript language-css">
 #title { //给第一行设置，也可以用 first child
   background-color: #444;
   color: white;
@@ -138,7 +138,7 @@ tr, td {
 .bg:nth-child(odd) { // odd 表示基数，event 表示偶数， 还可以使用 2n+1,n+1, -n 等等
   background-color: #b1d069;
 }
-    </pre>
+    </code></pre>
       <div>经过上面的设置之后，再来看看表格：</div>
       <table>
         <tr id="title">
@@ -168,10 +168,10 @@ tr, td {
     <div class="part">
       <h2>合并单元格</h2>
       <div>单元格可以合并行列</div>
-      <pre class="code-pre">
+      <pre><code class="language-javascript language-css">
 colspan=2 //表示占两列
 rowspan=2 //表示占两行
-    </pre>
+    </code></pre>
       <div>经过上面的设置之后，再来看看表格：</div>
       <table >
         <tr>

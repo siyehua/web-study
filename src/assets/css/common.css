@@ -3,12 +3,6 @@
     padding: 0;
 }
 
-.code-pre {
-    background: #2C2C2C18;
-    padding: 3px;
-    line-height: 36px;
-    font-size: 20px;
-}
 /*每个知识点*/
 .area {
     padding: 1em;

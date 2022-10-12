@@ -177,6 +177,11 @@ export default {
           title: "类",
           link: "/js/classuse",
         })
+        list.push({
+          id: id++,
+          title: "异步 Async",
+          link: "/js/asyncuse",
+        })
       }
     }
 

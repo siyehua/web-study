@@ -9,7 +9,7 @@
       <li>可以用 static 修饰静态方法</li>
     </ol>
 
-    <pre class="code-pre">
+    <pre><code class="language-javascript language-css">
     class MyClass {
       constructor(name) {
         this.name = name;
@@ -38,7 +38,7 @@
     cls.name1 = '456'
     console.log(cls.name1)
     console.log(cls.age)
-    </pre>
+    </code></pre>
   </div>
 </template>
 

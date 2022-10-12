@@ -11,12 +11,12 @@
 
       <div>问题很好解决，如果盒子 1 有内容，就可以避免。<br/> 为了避免上面的问题，可以给父元素增加一个伪元素</div>
       <br>
-      <pre class="code-pre">
+      <pre><code class="language-javascript language-css">
       .margin-fix{
         content: "";
         display: table;
         clear: both;
-      }</pre>
+      }</code></pre>
       <br/>一般配合 clear:both 一起用，同时解决两个问题<br><br>
       <div class="margin-fix" style="width: 10em;height: 10em;background-color: #b1d069">
         <div style="width: 5em;height: 5em;background-color: #e8e7e2;margin-top: 5em;">2</div>

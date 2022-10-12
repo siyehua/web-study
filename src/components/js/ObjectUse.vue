@@ -4,7 +4,7 @@
     <div class="part">
       <h2>基本介绍</h2>
       <div>Object 包含了很多常见的方法和属性，介绍一些常用的：</div>
-      <pre class="code-pre">
+      <pre><code class="language-javascript language-css">
     const person = {
       name: "Bill",
       age: 19,
@@ -13,13 +13,13 @@
 
     console.log(Object.keys(person)); // 获取 key，返回一个数组
     console.log(Object.values(person)); // 获取 value，返回一个数组
-    </pre>
+    </code></pre>
     </div>
 
     <div class="part">
       <h2>将函数转成对象</h2>
       <div>一般来说，用 function 描述的都是方法，但是可以将方法看成是一个自定义对象并且 new 出来，例如：</div>
-      <pre class="code-pre">
+      <pre><code class="language-javascript language-css">
     function Person(first, last, age, eye) {
       this.firstName = first;
       this.lastName = last;
@@ -31,7 +31,7 @@
     let p2 = new Person(1,1,1,1)
     p.allName = "siyehua";// 添加一个属性, 这个属性只能添加到 p 对象上，无法添加的 Person 本身，也就说说,p2 并没有这个属性
     console.log(p, p2)
-    </pre>
+    </code></pre>
     </div>
 
     <div class="part">
@@ -39,7 +39,7 @@
       <div>也就说说一旦 function 写完之后，没法动态的给它添加属性， 为了解决上面的问题，引进了 prototype，所以的 Object
         都有这个属性
       </div>
-      <pre class="code-pre">
+      <pre><code class="language-javascript language-css">
     function Person(first, last, age, eye) {
       this.firstName = first;
       this.lastName = last;
@@ -51,7 +51,7 @@
     let p2 = new Person(1,1,1,1)
     Person.prototype.allName = "siyehua";// 给原型对象添加一个属性
     console.log(p, p2);// 其实 p,p2 都有这个属性了(在原型对象里)
-    </pre>
+    </code></pre>
     </div>
 
     <div class="part">
@@ -66,7 +66,7 @@
           <td>Object.create()</td>
           <td>以现有对象为原型创建对象</td>
           <td>即，将当前对象的结构全部装载在原型对象中：<br/>
-            <pre class="code-pre">
+            <pre><code class="language-javascript language-css">
     const person = {
       name: "Bill",
       age: 19,
@@ -74,7 +74,7 @@
     };
     let pp = Object.create(person)
     console.log(pp) // pp 没有任何属性，但是原型对象的结构和 person 一样
-          </pre>
+          </code></pre>
           </td>
         </tr>
 
@@ -82,7 +82,7 @@
           <td>Object.defineProperty(object, property, descriptor)</td>
           <td>添加或更改对象属性</td>
           <td> 如果属性不存在则定义，存在则修改：<br/>
-            <pre class="code-pre">
+            <pre><code class="language-javascript language-css">
     const person = {
       name: "Bill",
       age: 19,
@@ -102,7 +102,7 @@
     })
     console.log(person)//{name: 'Bill', age: 19, city: 'Seattle', newName: 'siyehua'}
     console.log(Object.keys(person))// ['name', 'age', 'city'] // newName 没有列举出来
-          </pre>
+          </code></pre>
           </td>
         </tr>
 
@@ -110,12 +110,12 @@
           <td>Object.defineProperties(object, descriptors)</td>
           <td>添加或更改对象属性</td>
           <td> 如果属性不存在则定义，存在则修改：<br/>
-            <pre class="code-pre">
+            <pre><code class="language-javascript language-css">
     Object.defineProperties(person,{// 使用方法和 defineProperty 是一样的，不同的是可以同时注册多个
       newName1:{},
       newName2:{},
     })
-          </pre>
+          </code></pre>
           </td>
         </tr>
 
@@ -123,7 +123,7 @@
           <td>Object.getOwnPropertyDescriptor(object, property)</td>
           <td>访问属性</td>
           <td> 如果属性不存在则定义，存在则修改：<br/>
-            <pre class="code-pre">
+            <pre><code class="language-javascript language-css">
     const person = {
       name: "Bill",
       age: 19,
@@ -131,7 +131,7 @@
     };
     Object.getOwnPropertyDescriptor(person,'name')
     // 结果：{value: 'Bill', writable: true, enumerable: true, configurable: true}
-          </pre>
+          </code></pre>
           </td>
         </tr>
 
@@ -159,12 +159,12 @@
       <h2>configurable 详解</h2>
       <div>configurable 意思是是否可以重新配置，通过 {} 创建的对象都可以重新配置。<br/>
         defineProperty() 方法如果在定义的时候将 configurable 设置成了 false，之后就再重新执行这个方法，将会报错，具体规则如下：
-        <pre class="code-pre">
+        <pre><code class="language-javascript language-css">
 1. writable 特性只能由 true 再次改为 false 而不能由 false 改为 true ，这和《JavaScript 高级程序设计》的说法有出入。
 2. configurable 和 enumerable 特性可以再次设置不变的值不报错，没有实际意义。但是想改变这两个特性则会报错。
 3. value 特性再次改变时是否报错要根据 writable 特性来确定。writable 为 true，则 value 特性改为任何值都不会报错。如果 writable 为 false ，
 则同样 value 特性也只能再次设置不变的值不报错，没有实际意义。但是想改变其值则会报错。
-        </pre>
+        </code></pre>
       </div>
 
     </div>
