@@ -39,7 +39,7 @@
     <div class="part">
       <h2>雪碧图</h2>
       <span>雪碧图的意思就是将多张图组合到一张里面，然后通过坐标来定位，好处是一次性把需要的图都加载下来了，坏处是首次加载的速度可能比较慢</span>
-      <pre> <code class="language-css">
+      <pre v-highlight><code>
         .xuebi {
           height: 48px;
           width: 166px;
@@ -54,7 +54,7 @@
     <div class="part">
       <h2>渐变</h2>
       <div>线性渐变</div>
-      <pre><code class="language-css">
+      <pre v-highlight><code>
         .gradinet {
           width: 10em;
           height: 10em;
@@ -65,7 +65,7 @@
 
       <br>
       <h2>径向渐变</h2>
-      <pre><code class="language-css">
+      <pre v-highlight><code>
         .gradinet {
           width: 10em;
           height: 10em;
@@ -90,6 +90,7 @@ export default {
   height: 10em;
   background-image: radial-gradient(greenyellow, cadetblue);
 }
+
 .gradinet {
   width: 10em;
   height: 10em;

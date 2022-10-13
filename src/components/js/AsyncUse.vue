@@ -4,7 +4,7 @@
     <div class="part">
       <h2>回调</h2>
       <div><br>Js 主要通过 Promise 来实现异步，先来简单举一个回调的场景：<br></div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
     let name = 'old Name'
 
     /**
@@ -32,7 +32,7 @@
     <div class="part">
       <h2>自带的异步回调函数</h2>
       <div><br>自带的异步函数主要是：setTimeout() 和 setInterval() 方法<br></div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
     function print(name) {
       console.log(name);
     }
@@ -46,7 +46,7 @@
     <div class="part">
       <h2>Promise</h2>
       <div><br>Promise 是一个封装好的异步回调，可以输出成功信息或者错误回调<br></div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
     let p = new Promise(function (success, error) {
       let a = Math.round(Math.random() * 10);
       if (a % 2 === 0) {
@@ -66,7 +66,7 @@
       </code></pre>
 
       <div><br>上面是一个 Promise 的简单使用，本质上并不复杂，可以自定义一个，实现类似的功能:<br></div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
     class MyPromise {
       constructor(fun) {
         this.fun = fun;
@@ -96,7 +96,7 @@
     <div class="part">
       <h2>async</h2>
       <div><br>Promise 很好用，但是写起来比较麻烦，有比较简单的形式, 把上面的例子改造一下：</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
     async function print() {
       let a = Math.round(Math.random() * 10);
       if (a % 2 === 0) {
@@ -120,8 +120,7 @@
     <div class="part">
       <h2>await 关键字</h2>
       <div>await 可以配合 async , 实现当前函数直接处理结果，无需回调</div>
-      <pre>
-        <code class="language-javascript">
+      <pre v-highlight><code>
     async function print112() {
       let p = new Promise(function (success, error) {
         let a = Math.round(Math.random() * 10);
@@ -133,9 +132,11 @@
       })
       console.log(await p)
     }
-    print112();
-      </code></pre>
+    print112();</code>
+     </pre>
     </div>
+
+
   </div>
 </template>
 

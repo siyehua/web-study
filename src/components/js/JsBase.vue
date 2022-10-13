@@ -20,7 +20,7 @@
       <h2>数据类型</h2>
       <span>基本类型和对象是不一样的<br/>
       </span>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
     let a = 'fefef'
     let b = new String('fefef')
     </code></pre>

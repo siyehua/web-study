@@ -3,7 +3,7 @@
     <h1>表单</h1>
     <div class="part">
       <h2>正常的表单提交</h2>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
       &lt;form :action=&quot;submit&quot;&gt;
         账号：&lt;input type=&quot;text&quot; name=&quot;username&quot;&gt;&lt;br/&gt; //name 必须添加，不然无法得到对应的数据
         密码：&lt;input type=&quot;text&quot; name=&quot;username&quot;&gt;&lt;br/&gt;

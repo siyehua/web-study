@@ -4,7 +4,7 @@
     <div class="part">
       <h2>过渡动画设置</h2>
       <div>过渡动画在属性修改时，执行的动画。类似于 Android 的补间动画，它本身不会修改元素的属性</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
       transition: all 1s;
     </code></pre>
       <div><br/>all 表示所有的属性变更都会引起过渡动画， 1s 表示动画时间是 1s</div>
@@ -17,7 +17,7 @@
     <div class="part">
       <h2>动画</h2>
       <div>动画需要先写通过关键帧写一个动画，再设置进去。类似于 Android 的属性动画，它是不是真正的去修改元素的属性。</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
         //先写一个动画
 @keyframes my-animations {
   from{ //动画开始的属性

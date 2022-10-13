@@ -4,7 +4,7 @@
     <div class="part">
       <h2>获取字符串长度</h2>
       <span>使用 length</span>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
 let txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 let sln = txt.length;
       </code></pre>
@@ -17,7 +17,7 @@ let sln = txt.length;
       match() 是正则匹配，返回的所有符合的数组<br/>
       includes() 表示是否包含，返回的是一个布尔值<br/>
       </span>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
 let str = "The full name of China is the People's Republic of China.";
 let pos = str.indexOf("China");
       </code></pre>
@@ -30,7 +30,7 @@ let pos = str.indexOf("China");
       不同处： slice 支持负数，如果是负数则从尾到头查询<br/>
       不同处： substr 第二个参数不是end 的 index，而是要截取的长度<br/>
       </span>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
 let str = "Apple, Banana, Mango";
 let res = str.substr(7,6);
       </code></pre>
@@ -40,7 +40,7 @@ let res = str.substr(7,6);
       <h2>替换</h2>
       <span>replace(targetStr, newStr)<br/>
       </span>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
 let str = "Please visit Microsoft!";
 let n = str.replace("MICROSOFT", "W3School");
       </code></pre>
@@ -69,7 +69,7 @@ let n = str.replace("MICROSOFT", "W3School");
 
       </span>
 
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
 let a = "fefef";
 let b = `fefefef${a}`;
       </code></pre>

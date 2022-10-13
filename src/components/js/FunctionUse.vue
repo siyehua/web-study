@@ -5,14 +5,14 @@
     <div class="part">
       <h2>基本使用和介绍</h2>
       <div>函数基本形态：</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
     function functionName(param1, param2....) {
        return //可选
     }
       </code></pre>
 
       <div><br/>举个例子</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
     function myFunction(x, y) {
       return x + y;
     }
@@ -21,7 +21,7 @@
       </code></pre>
 
       <div><br>函数自调用:其实就是调用一下自己，无论是否匿名，都可以自调用</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
     (function myFunction(x, y) {
       return x + y;
     })()
@@ -31,7 +31,7 @@
       </code></pre>
 
       <div><br>箭头函数：类似于 java 的 lambada 形态</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
     let t =  (x, y) => x + y // 函数 t 和上面的函数功能等同
     let t2 = () => { // 如果有多行，则不能省略大括号
       console.log('I do not have this')
@@ -56,7 +56,7 @@
       </div>
 
       <div><br>参数</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
     function myFunction2(a, b) {
       let count = arguments.length // 获取真实的参数长度
       for (let i = 0; i 小于 count; i++) {
@@ -71,7 +71,7 @@
     <div class="part">
       <h2>call() 与 apply() 方法</h2>
       <div>call() 方法允许调用另一个对象的方法</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
     let person = {
       fullName: function(city, country) {
         // 此时 this 对象就是 person1

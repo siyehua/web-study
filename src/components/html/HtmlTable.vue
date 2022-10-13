@@ -5,7 +5,7 @@
       <h2>一个基本表格</h2>
 
       <div>代码：</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
   &lt;table&gt;
       &lt;tr&gt;
         &lt;td&gt;商品&lt;/td&gt;
@@ -56,7 +56,7 @@
     <div class="part">
       <h2>移除默认样式</h2>
       <div>默认的 table 是有样式的，有一定的间距，要移除样式：</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
 table {
     border-collapse: collapse; //合并边距
     border-spacing: 0; //边距为 0，设置了上面的属性，当前属性就无效了
@@ -95,7 +95,7 @@ tr, td {
     <div class="part">
       <h2>设置单元格的内容对齐方式</h2>
       <div>默认的 td 在垂直方式上是局中对齐的，但是水平方向是从左到右，可以修改：</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
 #content td { //表示只作用在id 为 content 的 td 上
   vertical-align: middle; //垂直方式上是局中对齐的就是这个样式，可不设置
   text-align: center; //文字水平方向上局中
@@ -129,7 +129,7 @@ tr, td {
     <div class="part">
       <h2>背景颜色</h2>
       <div>有时候我们希望表格的标题，以及每一行的颜色都不同，可以利用 nth 来做</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
 #title { //给第一行设置，也可以用 first child
   background-color: #444;
   color: white;
@@ -168,7 +168,7 @@ tr, td {
     <div class="part">
       <h2>合并单元格</h2>
       <div>单元格可以合并行列</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
 colspan=2 //表示占两列
 rowspan=2 //表示占两行
     </code></pre>

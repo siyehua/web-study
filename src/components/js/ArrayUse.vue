@@ -3,7 +3,7 @@
     <h1>数组</h1>
     <span>基本操作：
     </span>
-    <pre><code class="language-javascript language-css">
+    <pre v-highlight><code>
     let cars = ["Saab", "Volvo", "BMW"]; // 新建一个数组
     cars[0];// 访问第一个元素
     cars[1] = "fefe";// 修改第二个元素

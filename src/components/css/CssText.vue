@@ -32,7 +32,7 @@
       <h2>文本局中对齐的三种方式</h2>
 
 
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
     display: table-cell; //表示设置成 table 的一个元素 td
     text-align: center; // 水平局中
     vertical-align: middle;  //垂直局中
@@ -48,7 +48,7 @@
       </div>
 
       <br/>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
     text-align: center; //水平局中
     line-height: 10em;  // 行高等于高度，则垂直局中
       </code></pre>
@@ -62,7 +62,7 @@
       </div>
 
       <br/>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
     display: flex; // 开启 flex 弹性布局之后
     text-align: center; //无效
     justify-content: center; // 水平局中
@@ -83,7 +83,7 @@
 
     <div class="part">
       <h2>文本后面加省略号</h2>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
         .text-ellipsis{
         width: 5em;
         /*height: 5em;*/ 如果不是高度是多行，无效
@@ -97,7 +97,7 @@
     </div>
     <div class="part">
       设置表格有 border，这么设置：<br>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
           table {
           border-collapse: collapse;
           border-spacing: 0;

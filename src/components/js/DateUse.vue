@@ -3,7 +3,7 @@
     <h1>日期使用</h1>
     <div class="part">
       <h2>基本使用</h2>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
     let now = new Date(); // 当前时间
     now = new Date(2019,11,10,18,50,11,0) ; // 年月日时分秒毫秒（月是 0~11）
     now = new Date("2019-11-11");

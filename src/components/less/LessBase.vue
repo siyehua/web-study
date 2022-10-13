@@ -8,7 +8,7 @@
       <div><br/>
         安装，使用npm，输入：
       </div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
  sudo npm install less -g
     </code></pre>
       <p>安装好之后，在 Webstorm 中设置里：Setting → Tools → File Watchers → 点击加号 → 默认会自动选择 lessc，点击确定即可。</p>
@@ -23,7 +23,7 @@
 
       <h3>嵌套</h3>
       <p>css 写子代元素需要这么写：</p>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
 .box1 {
   background-color: #b1d069;
 }
@@ -37,7 +37,7 @@
     </code></pre>
 
       <p>改成 less 可以直接这么写</p>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
 .box1 {
   background-color: #b1d069;
 
@@ -55,7 +55,7 @@
       <br/><br/>
       <h3>变量使用</h3>
       <p>默认变量定义使用 @，例如：</p>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
 @theme: #b1d069; //定义变量,注意，必须以 ; 分号结尾
 
 .user {
@@ -73,7 +73,7 @@
       </code></pre>
 
       <h3>扩展</h3>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
 .user3:extend(.user2){
   //相等于继承了 user2 的属性
   background: #9900ff;
@@ -88,7 +88,7 @@
       </code></pre>
 
       <p><br/><br><br>混合，与扩展不同的时，混合是把所有的属性都复制过来</p>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
 //生成一个 mix 类选择器，这个选择器不会编译到 css 中
 .mix() {//后面追加() 括号就会生成
   width: 200px;
@@ -107,7 +107,7 @@
       </code></pre>
 
       <p>编译结果,不会生成 mix 类选择器：</p>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
 .a {
   width: 200px;
   height: 200px;

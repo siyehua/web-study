@@ -65,7 +65,7 @@
       </table>
 
       <div><br/>上述例子，不会换行是因为 flex-wrap 的值默认是 nowrap, 修改成 wrap 即会自动换行:</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
     flex-wrap: wrap;
       </code></pre>
       <div class="flex wrapper">
@@ -79,7 +79,7 @@
 
       <div><br/>默认的方向是 flex-direction 是 row ,即横向的，改成纵向：column</div>
       <div>同时，设置后子元素的宽度会充满整个父元素</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
     flex-direction: column;
       </code></pre>
       <div class="flex direction">
@@ -90,7 +90,7 @@
 
 
       <div><br/>如果设置纵向布局后，又给子元素一个固定的宽度，那就可以达到分栏排版的效果</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
     flex-direction: column;
     lex-wrap: wrap;
       </code></pre>
@@ -108,7 +108,7 @@
     <div class="part">
       <h2>局中和对齐</h2>
       <div>justify-content 意思是主轴的对齐方式，例如, flex 默认是水平排的，所以设置之后，就在水平局中</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
    justify-content: center;
       </code></pre>
       <div class="flex" style="justify-content: center;">
@@ -116,7 +116,7 @@
       </div>
 
       <div><br/>改成排序方式是列，就会在垂直方向上局中了</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
    flex-direction: column;
    justify-content: center;
       </code></pre>
@@ -134,7 +134,7 @@
       align-content属性与align-items作用相同，不过该属性只针对多行，对单行无效。
 
       <div><br/>下面这个例子，flex 弹性盒子默认是水平排列的，但是它在垂直方向上局中了</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
         align-items: center;
       </code></pre>
       <div class="flex" style="height: 20em;align-items: center;">
@@ -142,7 +142,7 @@
       </div>
 
       <div><br/>如果有多行，就要设置 align-content 局中</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
         align-content: center;
         flex-wrap: wrap;
       </code></pre>
@@ -193,7 +193,7 @@
       </table>
 
       <div><br/>order 举个例子,下面两个盒子中，盒子设置了 order = 2 就排在 1 的后面了：</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
   order: 2;
       </code></pre>
       <div class="flex">
@@ -204,7 +204,7 @@
       <div><br/>flex-grow 的意思是权重，即item 占用了多少固定端宽度，将剩下的宽度按照 grow 大小平均，再乘以 grow 的大小，例如下面这个例子
         ，1 和 2 这两个盒子，1 设置了 grow 就占用了剩余的所有空间
       </div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
   flex-grow: 1
       </code></pre>
       <div class="flex" style="flex-wrap: wrap;">
@@ -218,7 +218,7 @@
         所以盒子 1 的宽度是： 10em(盒子宽度) - 20em（超出部分） / 7（总比例） * 2（收缩因子） = 65px<br/>
         所以其他盒子的宽度是： 10em(盒子宽度) - 20em（超出部分） / 7（总比例） * 1（收缩因子） = 112px<br/>
       </div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
   flex-shrink: 2
       </code></pre>
       <div class="flex" style="width: 40em;padding:0;background-color: rebeccapurple">
@@ -246,7 +246,7 @@
       </div>
 
       <div><br/>下面例子中，盒子 2 设置了 basics = 50%，即父元素宽度的 50%，所以它的宽度等于 10em;</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
   flex-basis: 50%
       </code></pre>
       <div class="flex" style="width: 20em;height: 20em;padding:0;background-color: rebeccapurple;flex-wrap: wrap;">
@@ -267,7 +267,7 @@
 
       <div><br/>前面的例子说了 align-items 可以可以子元素的对齐方式，但是如果只想指定的某个元素设置对齐方式，就需要对子元素设置，
       <br/>下面例子中，盒子 1 在垂直方向上局中了，其他的没有</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
   align-self: center；
       </code></pre>
       <div class="flex" style="width: 40em;height: 40em;padding:0;background-color: rebeccapurple;flex-wrap: wrap;">

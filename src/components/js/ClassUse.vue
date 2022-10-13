@@ -9,7 +9,7 @@
       <li>可以用 static 修饰静态方法</li>
     </ol>
 
-    <pre><code class="language-javascript language-css">
+    <pre v-highlight><code>
     class MyClass {
       constructor(name) {
         this.name = name;

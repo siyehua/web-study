@@ -11,7 +11,7 @@
         <div class="box2">2</div>
       </div>
       <div>给盒子设置平移(鼠标移动即执行动画)：</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
 html{
   perspective: 800px; //如果设置 Z 轴，必须先给 html 设置一个距离用户的距离，才能体现出近大远小的效果
 }
@@ -30,7 +30,7 @@ html{
     <div class="part">
       <h2>应用</h2>
       <div>让按钮在垂直方向上局中,对没有固定宽高的元素非常好用：</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
 position: absolute;
 top: 50%; //这里距离顶部 50%，但是只是底部局中了，自身并没有局中
 transform: translateY(-50%);    //通过平移自身 -50% 来达到局中
@@ -46,7 +46,7 @@ transform: translateY(-50%);    //通过平移自身 -50% 来达到局中
       <div>旋转使用的属性是一样的，都是 transform, 用的方法是 rotate(xx deg)</div>
 
       <div>举个简单的例子：</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
   transform: rotate(300deg); //表示转动 300 度
   transition: 2s; //动画时间两秒
       </code></pre>
@@ -59,7 +59,7 @@ transform: translateY(-50%);    //通过平移自身 -50% 来达到局中
     <div class="part">
       <h2>缩放</h2>
       <div>举个简单的例子：</div>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
   transform: scale(.5); //缩小到 0.5 倍大小
   transition: 2s; //动画时间两秒
       </code></pre>
@@ -68,7 +68,7 @@ transform: translateY(-50%);    //通过平移自身 -50% 来达到局中
              style="width: 5em;height: 5em; background-color: #b1d069;margin-top: 30%;margin-left: 30%;"></div>
       </div>
 
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
   transform: scale(1.1); //缩小到 1.1 倍大小
   transition: .5s; //动画时间0.5
 

@@ -11,7 +11,7 @@
 
       <div>问题很好解决，如果盒子 1 有内容，就可以避免。<br/> 为了避免上面的问题，可以给父元素增加一个伪元素</div>
       <br>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
       .margin-fix{
         content: "";
         display: table;

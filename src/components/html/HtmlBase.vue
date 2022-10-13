@@ -4,7 +4,7 @@
 
     <div class="part">
       <h2>一个简单的 html 结构</h2>
-      <pre><code class="language-javascript language-css">
+      <pre v-highlight><code>
       &lt;!-- 表示这是一个 html5 写的页面 --&gt;
       &lt;!DOCTYPE html&gt;
       &lt;html lang=&quot;&quot;&gt;&lt;!-- lang 可以设置语言，例如打开某些英文界面提示翻译成中文，就是设置了这个 --&gt;
@@ -31,7 +31,7 @@
     <div class="part">
       <h2>字体</h2>
       <div>可以全局设置下载字体</div>
-      <pre><code class="language-css">
+      <pre v-highlight><code>
         @font-face {
           font-family: myFont; //字体名字，以便下面用
           src: url("字体地址");
@@ -39,7 +39,7 @@
       </code></pre>
 
       <div> 在 css 中使用</div>
-      <pre><code class="language-css">
+      <pre v-highlight><code>
         font-family: myFont;
       </code></pre>
     </div>
