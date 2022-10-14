@@ -5,7 +5,7 @@ import App from './App.vue'
 import './assets/css/common.css'
 
 import hljs from 'highlight.js' //导入代码高亮文件
-import 'highlight.js/styles/base16/bright.css'  //导入代码高亮样式, 切换其他样式可以去官网看 demo
+import 'highlight.js/styles/shades-of-purple.css'  //导入代码高亮样式, 切换其他样式可以去官网看 demo
 
 createApp(App)
     //代码高亮

@@ -12,9 +12,10 @@
 
 /*知识点的每个部分*/
 .part {
-    padding: 1em;
-    margin: 1em;
-    border: 1px salmon solid;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 1em;
+    border-top: 1px salmon solid;
 }
 
 a{

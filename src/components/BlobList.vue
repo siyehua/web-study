@@ -182,6 +182,11 @@ export default {
           title: "异步 Async",
           link: "/js/asyncuse",
         })
+        list.push({
+          id: id++,
+          title: "Html Dom",
+          link: "/js/htmldom",
+        })
       }
     }
 
