@@ -17,11 +17,18 @@ import PubSub from 'pubsub-js';
 export default {
   name: "BlobList",
   setup() {
-    console.log('我被重置了')
-    let type = 'html';
+    let lastPath = document.cookie.split(';').find(function (value) {
+      return value.trim().startsWith('menuType')
+    })
+    let type = 'html'
+    if (lastPath !== null && lastPath !== undefined) {
+      type = lastPath.split('=')[1]
+    }
+    console.log('我被重置了', type);
     let menuTypeChange = function (msg, data) {
       console.log(msg, data);
       type = data.toLowerCase()
+      document.cookie = 'menuType=' + type + ";";
       setListData();
     };
     PubSub.subscribe('menuChange', menuTypeChange)
@@ -135,13 +142,13 @@ export default {
           title: "小米首页",
           link: "/example/mipage",
         })
-      }else if(type.toLowerCase() === 'less'){
+      } else if (type.toLowerCase() === 'less') {
         list.push({
           id: id++,
           title: "Less",
           link: "/less/lessbase",
         })
-      }else if(type.toLowerCase() === 'js 基础'){
+      } else if (type.toLowerCase() === 'js 基础') {
         list.push({
           id: id++,
           title: "js基础",
@@ -186,6 +193,11 @@ export default {
           id: id++,
           title: "Html Dom",
           link: "/js/htmldom",
+        })
+        list.push({
+          id: id++,
+          title: "BOM",
+          link: "/js/bomuse",
         })
       }
     }

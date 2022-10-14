@@ -29,6 +29,7 @@ import FunctionUse from "@/components/js/FunctionUse";
 import ClassUse from "@/components/js/ClassUse";
 import AsyncUse from "@/components/js/AsyncUse";
 import HtmlDom from "@/components/js/HtmlDom";
+import BomUse from "@/components/js/BomUse";
 // import App from "@/App";
 
 const router = new createRouter({
@@ -108,6 +109,8 @@ const router = new createRouter({
             path: "/js/asyncuse", component: AsyncUse,
         }, {
             path: "/js/htmldom", component: HtmlDom,
+        },{
+            path: "/js/bomuse", component: BomUse,
         },
 
     ]
