@@ -199,6 +199,11 @@ export default {
           title: "BOM",
           link: "/js/bomuse",
         })
+        list.push({
+          id: id++,
+          title: "AJAX",
+          link: "/js/ajaxuse",
+        })
       }
     }
 

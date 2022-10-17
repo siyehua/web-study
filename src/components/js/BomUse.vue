@@ -139,17 +139,17 @@
     <div class="part">
       <h2>cookie 使用</h2>
       <div>
-      Cookie 是在您的计算机上存储在小的文本文件中的数据。<br>
-      当 web 服务器向浏览器发送网页后，连接被关闭，服务器会忘记用户的一切。<br><br>
+        Cookie 是在您的计算机上存储在小的文本文件中的数据。<br>
+        当 web 服务器向浏览器发送网页后，连接被关闭，服务器会忘记用户的一切。<br><br>
 
-      Cookie 是为了解决“如何记住用户信息”而发明的：<br>
-      当用户访问网页时，他的名字可以存储在 cookie 中。<br>
-      下次用户访问该页面时，cookie 会“记住”他的名字。<br><br>
+        Cookie 是为了解决“如何记住用户信息”而发明的：<br>
+        当用户访问网页时，他的名字可以存储在 cookie 中。<br>
+        下次用户访问该页面时，cookie 会“记住”他的名字。<br><br>
 
-      Cookie 保存在名称值对中，如：<br>
-      username = Bill Gates<br>
-      当浏览器从服务器请求一个网页时，将属于该页的 cookie 添加到该请求中。这样服务器就获得了必要的数据来“记住”用户的信息。<br>
-      如果浏览器已关闭本地 cookie 支持，则以下实例均无法工作。<br>
+        Cookie 保存在名称值对中，如：<br>
+        username = Bill Gates<br>
+        当浏览器从服务器请求一个网页时，将属于该页的 cookie 添加到该请求中。这样服务器就获得了必要的数据来“记住”用户的信息。<br>
+        如果浏览器已关闭本地 cookie 支持，则以下实例均无法工作。<br>
       </div>
 
       <div>
@@ -179,10 +179,6 @@ document.cookie = "username=; ";
           <td>位置</td>
         </tr>
         <tr class="item">
-          <td>navigator.geolocation</td>
-          <td>位置</td>
-        </tr>
-        <tr class="item">
           <td>checkValidity()</td>
           <td>如果 input 元素包含有效数据，则返回 true。</td>
         </tr>
@@ -191,17 +187,15 @@ document.cookie = "username=; ";
           <td>自定义检查</td>
         </tr>
         <tr class="item">
-          <td>setCustomValidity()</td>
-          <td>自定义检查</td>
-        </tr>
-        <tr class="item">
           <td>localStorage.setItem("name", "Bill Gates");<br>
-            localStorage.getItem("name");</td>
+            localStorage.getItem("name");
+          </td>
           <td>简单存储和获取数据</td>
         </tr>
         <tr class="item">
           <td>sessionStorage.setItem("name", "Bill Gates");<br>
-            sessionStorage.getItem("name");</td>
+            sessionStorage.getItem("name");
+          </td>
           <td>跟上面的一样，但是浏览器关闭会清空数据</td>
         </tr>
         <tr class="item">
@@ -214,16 +208,52 @@ document.cookie = "username=; ";
         </tr>
       </table>
     </div>
+
+    <div class="part">
+      <h2>Worker</h2>
+      <div>Js 是单线程语言，如果要执行比较耗时的操作，就需要用到多线程 <br>
+        worker 是后台运行程序，可以将耗时任务到里面，它会向浏览器申请一个新的线程来执行
+      </div>
+
+      <pre v-highlight><code>
+    //bomWorker.js 文件内容
+    let a = 10;
+
+    function count() {
+        a++;
+        console.log('send message', a);
+        postMessage(a)
+        setTimeout(count, 500)
+    }
+
+    count()
+
+
+    //worker
+    let worker = new Worker('bomWorker.js');
+    worker.onmessage = function (event) {
+      console.log("get message", event.data)
+    }
+    setTimeout(function () {
+      worker.terminate()
+    }, 3000)
+      </code></pre>
+    </div>
+
   </div>
 </template>
 
 <script>
+// import './bom/runWorker.js'
+
 export default {
   name: "BomUse",
   data() {
     return {}
   },
 }
+
+
 </script>
 
 <style scoped>
