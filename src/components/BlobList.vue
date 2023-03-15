@@ -204,6 +204,17 @@ export default {
           title: "AJAX",
           link: "/js/ajaxuse",
         })
+      }else if(type.toLowerCase() === 'typescript'){
+        list.push({
+          id: id++,
+          title: "TypeScript 基础",
+          link: "/ts/tsbase",
+        })
+        list.push({
+          id: id++,
+          title: "Object",
+          link: "/ts/tsobject",
+        })
       }
     }
 

@@ -49,3 +49,9 @@ tr.item {
 tr.item:nth-child(Odd) {
     background-color: #F5F5F5;
 }
+
+pre {
+    /*代码加上上下间距*/
+    margin-top: 1em;
+    margin-bottom: 1em;
+}

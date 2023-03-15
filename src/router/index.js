@@ -31,6 +31,8 @@ import AsyncUse from "@/components/js/AsyncUse";
 import HtmlDom from "@/components/js/HtmlDom";
 import BomUse from "@/components/js/BomUse";
 import AjaxUse from "@/components/js/AjaxUse";
+import TypeScriptBase from "@/components/ts/TypeScriptBase";
+import TypeObject from "@/components/ts/TypeObject";
 // import App from "@/App";
 
 const router = new createRouter({
@@ -110,10 +112,14 @@ const router = new createRouter({
             path: "/js/asyncuse", component: AsyncUse,
         }, {
             path: "/js/htmldom", component: HtmlDom,
-        },{
+        }, {
             path: "/js/bomuse", component: BomUse,
-        },{
+        }, {
             path: "/js/ajaxuse", component: AjaxUse,
+        }, {
+            path: "/ts/tsbase", component: TypeScriptBase,
+        },{
+            path: "/ts/tsobject", component: TypeObject,
         },
 
     ]

@@ -41,8 +41,8 @@ export default {
       },
       {
         id: id++,
-        title: "JS 高级语法",
-        link: "/csslayout",
+        title: "TypeScript",
+        link: "/ts/tsbase",
       },
       {
         id: id++,
